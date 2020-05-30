@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 13px;
-  overflow-x: hidden;/*conteúdo que ultrapassa a horizontal é ignorado*/
+  overflow-x: hidden; /*conteúdo que ultrapassa a horizontal é ignorado*/
 }
 
 header {
@@ -85,29 +85,29 @@ header {
 .banner {
   height: calc(100vh - 100px); /*total do monitor - 100px do tamanho header*/
   background-color: #333;
-  background-image: url('../images/bg.jpg');
+  background-image: url("../images/bg.jpg");
   background-size: cover; /*ajustar o tamanho da imagem*/
-  background-position: bottom;/*prioriza a parte inferior da imagem*/
+  background-position: bottom; /*prioriza a parte inferior da imagem*/
   overflow: hidden; /*tiro a barra de rolagem dos slides*/
 }
 
 .banner .sliders {
-  width: 1000vw;/*largura dos 10 slides*/
-  height: 100%; 
+  width: 1000vw; /*largura dos 10 slides*/
+  height: 100%;
 }
 
 .banner .slide {
-  width: 100vw;/*largura da tela*/
+  width: 100vw; /*largura da tela*/
   height: 100%;
-  display: inline-block;/*slides lado a lado*/
-  background-color: rgba(0, 0, 0, 0.8);/*escurece a imagem do banner*/
+  display: inline-block; /*slides lado a lado*/
+  background-color: rgba(0, 0, 0, 0.8); /*escurece a imagem do banner*/
 }
 
 .banner .slidearea {
   display: flex;
-  flex-direction: column;/*exibe um abaixo do outro*/
+  flex-direction: column; /*exibe um abaixo do outro*/
   height: 100%;
-  justify-content: center;/*conteúdo centralizado horizontal*/
+  justify-content: center; /*conteúdo centralizado horizontal*/
   align-items: center; /*conteúdo centralizado vertical*/
   color: #fff;
 }
@@ -210,23 +210,11 @@ header {
   color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*
   CSS DE ÁREAS ESPECIFICAS
 */
 .section-aboutus {
-  display: flex;  
+  display: flex;
 }
 
 .section-aboutus--left {
@@ -235,7 +223,7 @@ header {
 
 .section-aboutus--left p {
   font-size: 14px;
-  line-height: 25px;/*espaço entre as linhas*/
+  line-height: 25px; /*espaço entre as linhas*/
 }
 
 .section-aboutus--right {
@@ -248,3 +236,36 @@ header {
   box-shadow: 0px 5px 10px #333;
 }
 
+.section-services {
+  display: flex;
+}
+
+.section-service {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #333;
+  padding: 15px;
+}
+
+.section-services img {
+  width: 59px;
+  height: 58px;
+}
+
+/*Coloco a borda no 1º a esquerda*/
+.section-service:first-child {
+  border-left: 1px solid #333;
+}
+
+
+.section-service h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.section-service p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999;
+}
